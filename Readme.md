@@ -1,7 +1,8 @@
 ## 1. Introdoction
 본 프로젝트는 서울시 공공자전거 '따릉이'의 성공 요인을 계량적으로 분석하고, 이를 인천시에 적용하여 신규 대여소의 최적 입지를 도출하는 공간 분석(Geospatial Analysis) 모델을 개발하는 것을 목표로 합니다.
 
-핵심 기술은 이종(Heterogeneous)의 GIS 데이터—벡터(Point, Polygon)와 래스터(Raster)—를 파이썬 생태계 안에서 융합하여 처리하고, 가설을 검증하며, 최종적으로 실행 가능한 비즈니스 인사이트(Actionable Insight)를 제공하는 데 있습니다. 모든 분석 과정은 **재현성(Reproducibility)과 확장성(Scalability)**을 고려하여 Python, geopandas, rasterio 기반의 코드로 구현되었습니다.
+핵심 기술은 이종(Heterogeneous)의 GIS 데이터—벡터(Point, Polygon)와 래스터(Raster)—를 파이썬 생태계 안에서 융합하여 처리하고, 가설을 검증하며, 최종적으로 실행 가능한 비즈니스 인사이트(Actionable Insight)를 제공하는 데 있습니다.
+모든 분석 과정은 **재현성(Reproducibility)과 확장성(Scalability)** 을 고려하여 Python, geopandas, rasterio 기반의 코드로 구현되었습니다.
 
 ## 2. Stack
 ### Primary Language:
@@ -18,7 +19,7 @@ Python (3.x)
 **pyplot & matplotlib & seaborn**: 분석 결과 시각화.
 
 ## 3. Data Analysis Pipeline
-### [Step 1]: Data Ingestion & CRS Unification
+### Step 1: Data Ingestion & CRS Unification
 Challenge: 서울시와 인천시에서 수집된 데이터(SHP, CSV)는 각각 다른 좌표계(CRS)를 사용하거나 지리 정보가 누락되어 있어 공간 연산이 불가능했습니다.
 
 Solution:
